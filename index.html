@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haircutecture - Professional Hair Salon</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Announcement Banner -->
+    <div id="announcement-banner" class="announcement-banner">
+        <div class="announcement-content">
+            <i class="fas fa-info-circle"></i>
+            <span id="announcement-text">Announcements go here!</span>
+            <button id="close-announcement" class="close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="logo.jpg" alt="Haircutecture Logo" class="logo-img">
+                    <span class="logo-text">Haircutecture</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#gallery" class="nav-link">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#booking" class="nav-link booking-btn">Book Now</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Haircutecture</h1>
+            <p class="hero-subtitle">Haircutecture is a salon where modern and classic styles merge & our clients leave looking
+                 and feeling their best with stylists who have a passion for hair.
+                A salon for both men & women!</p>
+            <div class="hero-buttons">
+                <a href="#booking" class="btn btn-primary">Book Appointment</a>
+                <a href="#services" class="btn btn-secondary">View Services</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3>Hair Cuts & Styling</h3>
+                    <p>From classic cuts to modern styles, our expert stylists create looks that complement your lifestyle.</p>
+                    <div class="service-price">Starting at $65</div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Hair Color</h3>
+                    <p>Transform your look with our premium coloring services, from subtle highlights to bold transformations.</p>
+                    <div class="service-price">Starting at $120</div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Hair Treatments</h3>
+                    <p>Restore and nourish your hair with our deep conditioning and specialized treatment services.</p>
+                    <div class="service-price">Starting at $85</div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Special Events</h3>
+                    <p>Look your best for weddings, proms, and special occasions with our updo and styling services.</p>
+                    <div class="service-price">Starting at $95</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Haircutecture</h2>
+                    <p>At Haircutecture, we believe that great hair is an art form. Our team of skilled professionals combines technical expertise with creative vision to deliver exceptional results that enhance your natural beauty.</p>
+                    <p>Founded on the principle that precision and artistry go hand in hand, we create personalized experiences that leave you feeling confident and beautiful.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5000+</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Expert Stylists</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p>Salon Interior Photo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Our Work</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="image-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p>Before/After 1</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p>Before/After 2</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p>Before/After 3</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p>Before/After 4</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p>Before/After 5</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p>Before/After 6</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2 class="section-title">Book Your Appointment</h2>
+            <div class="booking-content">
+                <div class="booking-info">
+                    <h3>Schedule Your Visit</h3>
+                    <p>Ready to transform your look? Book your appointment with one of our expert stylists today.</p>
+                    <div class="booking-features">
+                        <div class="feature">
+                            <i class="fas fa-calendar-check"></i>
+                            <span>Online Booking Available</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <span>Flexible Scheduling</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-credit-card"></i>
+                            <span>Multiple Payment Options</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="booking-form-container">
+                    <form id="booking-form" class="booking-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="haircut">Hair Cut & Styling</option>
+                                <option value="color">Hair Color</option>
+                                <option value="treatment">Hair Treatment</option>
+                                <option value="special">Special Event</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Preferred Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Preferred Time</label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="notes">Additional Notes</label>
+                            <textarea id="notes" name="notes" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Book Appointment</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Visit Our Salon</h2>
+            <div class="location-visual">
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.7344573829564!2d-94.59326892398648!3d39.053451671733474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c0f0b7f8b6b6b7%3A0x1234567890abcdef!2s4249%20Roanoke%20Rd%2C%20Kansas%20City%2C%20MO%2064111%2C%20USA!5e0!3m2!1sen!2sus!4v1720000000000!5m2!1sen!2sus"
+                        width="100%" 
+                        height="300" 
+                        style="border:0; border-radius: 10px;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Haircutecture Salon Location">
+                    </iframe>
+                </div>
+                <div class="building-image">
+                    <img src="building.jpg" alt="Haircutecture Salon Building" class="building-photo">
+                    <div class="building-caption">
+                        <h4>Our Beautiful Location</h4>
+                        <p>Located within the Statements building!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="logo.jpg" alt="Haircutecture Logo" class="footer-logo-img">
+                        <span class="footer-logo-text">Haircutecture</span>
+                    </div>
+                    <p>Where hair meets architecture. Creating beautiful, precise cuts with artistic flair.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/westporthairkc" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/haircutecture" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#booking">Book Now</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#services">Hair Cuts</a></li>
+                        <li><a href="#services">Hair Color</a></li>
+                        <li><a href="#services">Treatments</a></li>
+                        <li><a href="#services">Special Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-phone"></i>(816) 682-2919</p>
+                        <p><i class="fas fa-envelope"></i> jessicabhair@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 4249 Roanoke rd, Kansas City, MO, 64111</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Haircutecture. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
