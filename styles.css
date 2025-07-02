@@ -618,6 +618,15 @@ section {
     margin-bottom: 20px;
 }
 
+.footer a {
+    color: #93c5fd; /* Lighter blue for contrast against dark backgrounds */
+}
+
+.footer a:hover,
+.footer a:focus {
+    color: #ffffff; /* White for maximum contrast on hover */
+}
+
 .social-links {
     display: flex;
     gap: 15px;
