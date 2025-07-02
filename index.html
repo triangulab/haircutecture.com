@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="announcement-banner" class="announcement-banner">
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <div id="announcement-banner" class="announcement-banner" role="alert" aria-live="polite">
         <div class="announcement-content">
             <i class="fas fa-info-circle"></i>
             <span id="announcement-text">We're building something great!&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://undraw.co/api/illustrations/website-build.svg" alt="Site under construction" width="300"> </span>
@@ -19,11 +20,13 @@
         </div>
     </div>
 
-    <header class="header">
-        <nav class="navbar">
+    <header class="header" role="banner">
+        <nav class="navbar" role="navigation" aria-label="Main Navigation">
             <div class="nav-container">
                 <div class="logo">
-                    <img src="logo.jpg" alt="Haircutecture Logo" class="logo-img">
+                    <img src="logo.jpg" 
+                        alt="Haircutecture Logo" 
+                        class="logo-img">
                     <span class="logo-text">Haircutecture</span>
                 </div>
                 <ul class="nav-menu">
@@ -55,7 +58,8 @@
         </nav>
     </header>
 
-    <section id="home" class="hero">
+<main role="main">
+    <section id="home" class="hero" aria-label="Welcome">
         <div class="hero-content">
             <h1 class="hero-title">Haircutecture</h1>
             <p class="hero-subtitle">Haircutecture is a salon where modern and classic styles merge & our clients leave looking
@@ -70,7 +74,7 @@
             <div class="hero-overlay"></div>
         </div>
     </section>
-
+</main>
     <section id="services" class="services">
         <div class="container">
             <h2 class="section-title">Our Services</h2>
@@ -271,7 +275,9 @@
                     </iframe>
                 </div>
                 <div class="building-image">
-                    <img src="building.jpg" alt="Haircutecture Salon Building" class="building-photo">
+                    <img src="building.jpg"
+                         alt="Haircutecture Salon Building"
+                         class="building-photo">
                     <div class="building-caption">
                         <h4>Our Beautiful Location</h4>
                         <p>Located within the Statements building!</p>
@@ -281,7 +287,7 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
@@ -291,8 +297,17 @@
                     </div>
                     <p>A salon for both men & women.</p>
                     <div class="social-links">
-                        <a href="https://www.facebook.com/westporthairkc" class="social-link"><i class="fab fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/haircutecture" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/westporthairkc"
+                        class="social-link"
+                        aria-label="Visit our Facebook page."
+                        rel="noopener noreferrer">
+                        <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/haircutecture" class="social-link"
+                        aria-label="Visit our Instagram page."
+                        rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i>
+                        </a>
                     </div>
                 </div>
                 <div class="footer-section">

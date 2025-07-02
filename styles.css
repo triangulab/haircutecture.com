@@ -972,3 +972,25 @@ section {
     opacity: 1;
     transform: translateX(0);
 }
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    z-index: 999;
+    padding: 1em;
+    background-color: white;
+    color: #1e40af;
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-link:focus,
+.btn:focus,
+.social-link:focus {
+    outline: 3px solid #1e40af;
+    outline-offset: 2px;
+}
