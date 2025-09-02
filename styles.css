@@ -27,16 +27,6 @@ body {
     padding: 0 20px;
 }
 
-/* Announcement Banner */
-.announcement-banner {
-    text-align: center;
-    background: linear-gradient(135deg, #1e3a8a, #3b82f6);
-    color: white;
-    padding: 12px 0;
-    position: relative;
-    z-index: 1000;
-    animation: slideDown 0.5s ease-out;
-}
 .map-container iframe {
     width: 100%;
     height: 100%;
@@ -51,14 +41,6 @@ body {
     justify-content: center;
     gap: 10px;
     position: relative;
-}
-
-.announcement-content i {
-    font-size: 1.1em;
-}
-
-.announcement-banner.hidden {
-    display: none;
 }
 
 @keyframes slideDown {
@@ -186,37 +168,51 @@ body {
 
 /* Hero Section */
 .hero {
-    height: 100vh;
-    background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+    height: 45vh; /* Smaller height */
+    min-height: 320px;
+    padding: 40px 0 30px 0;
+    background: linear-gradient(120deg, #528fd4 0%, #1229aa 100%);
     display: flex;
     align-items: center;
+    justify-content: center;
     position: relative;
+    text-align: center;
+    box-shadow: 0 4px 32px rgba(255,126,107,0.08);
+    border-radius: 0 0 40px 40px;
     overflow: hidden;
 }
 
 .hero-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
     z-index: 2;
-    flex: 1;
+    max-width: 1100px;
+    margin: 0 auto;
+    color: #fff;
 }
 
 .hero-title {
-    font-family: Papyrus;
-    font-size: 4rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 3.0rem;
     font-weight: 700;
-    color: #1e40af;
+    margin-bottom: 0.5rem;
+    color: #fff;
     letter-spacing: 2px;
-    display: flex;
-    gap: 18px;
+    text-shadow: 1px 2px 8px rgba(0,0,0,0.10);
+    text-align: left;
+}
+
+.hero-location {
+    text-align: left;
+    font-size: 1.5em;
+    color: #fff;
+    margin-bottom: 0.5rem;
 }
 
 .hero-subtitle {
-    font-size: 1.3em;
-    color: #666;
-    margin-bottom: 30px;
-    max-width: 1000px;
+    text-align: left;
+    font-size: 1.15em;
+    color: #fff;
+    margin-bottom: 0;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.10);
 }
 
 .hero-buttons {
