@@ -403,3 +403,17 @@ section{ padding:80px 0; }
 /* If your fixed header overlaps the top of the hero on some phones: */
 main{ padding-top: 72px; }         /* adjust to your header height */
 @media (min-width: 769px){ main{ padding-top: 80px; } }
+
+/* --- Anchor offset for fixed header --- */
+:root { --header-h: 72px; }              /* match your header height */
+
+#home,
+#contact,
+section[id] {
+  scroll-margin-top: var(--header-h);    /* modern browsers incl. iOS Safari */
+}
+
+/* If your header is taller on desktop */
+@media (min-width: 900px){
+  :root { --header-h: 80px; }
+}
