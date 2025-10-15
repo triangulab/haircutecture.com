@@ -46,7 +46,26 @@
                 and feeling their best with stylists who have a passion for hair.
                 <br><br>A salon for both men & women!</p>
         </div>
-        <div class="hero-image">
+        <div class="hero-image" aria-hidden="true">
+            <picture>
+                <!-- Phones -->
+                <source
+                srcset="building.jpg 800w"
+                media="(max-width: 480px)"
+                sizes="100vw">
+                <!-- Tablets -->
+                <source
+                srcset="building.jpg 1200w"
+                media="(max-width: 900px)"
+                sizes="100vw">
+                <!-- Default / desktop -->
+                <img class="hero-photo"
+                    src="jessica.png"
+                    alt=""
+                    loading="lazy"
+                    decoding="async">
+            </picture>
+
             <div class="hero-overlay"></div>
         </div>
     </section>
