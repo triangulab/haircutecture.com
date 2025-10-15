@@ -371,3 +371,8 @@ section{ padding:80px 0; }
 }
 @media (min-width: 1200px){ .hero-photo{ object-position: 92% 30%; } }
 @media (max-width: 1100px){ .hero-photo{ object-position: 85% 34%; } }
+@media (max-width: 768px) {
+  .contact * {
+    text-align: left;
+  }
+}
