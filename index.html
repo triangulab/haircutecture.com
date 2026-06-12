@@ -50,12 +50,12 @@
             <picture>
                 <!-- Phones -->
                 <source
-                srcset="building.jpg 800w"
+                srcset="jessica.png 800w"
                 media="(max-width: 480px)"
                 sizes="100vw">
                 <!-- Tablets -->
                 <source
-                srcset="building.jpg 1200w"
+                srcset="jessica.png 1200w"
                 media="(max-width: 900px)"
                 sizes="100vw">
                 <!-- Default / desktop -->
@@ -76,7 +76,7 @@
             <div class="location-visual">
                 <div class="map-container">
                     <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.7344573829564!2d-94.59326892398648!3d39.053451671733474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c0f0b7f8b6b6b7%3A0x1234567890abcdef!2s4249%20Roanoke%20Rd%2C%20Kansas%20City%2C%20MO%2064111%2C%20USA!5e0!3m2!1sen!2sus!4v1720000000000!5m2!1sen!2sus"
+                        src="https://maps.google.com/maps?q=Salon+eVolve,+1010+Westport+Rd,+Kansas+City,+MO+64111&output=embed"
                         width="100%" 
                         height="300" 
                         style="border:0; border-radius: 10px;" 
@@ -92,7 +92,7 @@
                          class="building-photo">
                     <div class="building-caption">
                         <h4>Our Location</h4>
-                        <p>Located within the Statements building!</p>
+                        <p>Now located inside Salon Evolve in Old Westport &mdash; between Dollar Tree and Half Price Books!</p>
                     </div>
                 </div>
             </div>
@@ -124,18 +124,19 @@
                 <div class="footer-section">
                     <h3>Contact</h3>
                     <div class="footer-contact">
-                        <p><i class="fas fa-map-marker-alt"></i>4249 Roanoke Rd, Kansas City, MO 64111</p>
+                        <p><i class="fas fa-map-marker-alt"></i>1010 Westport Rd, Kansas City, MO 64111</p>
                         <p><i class="fas fa-phone"></i><a href="tel:+18166822919">(816) 682-2919</a></p>
                         <p><i class="fas fa-envelope"></i><a href="mailto:jessicabhair@gmail.com">jessicabhair@gmail.com</a></p>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p class="footer-signature">&copy; 2025 All rights reserved. Website inquiries: <a href="mailto:taylorw.data@gmail.com">taylorw.data@gmail.com</a></p>
+                <p class="footer-signature">&copy; <span id="copyright-year">2026</span> All rights reserved. Website inquiries: <a href="mailto:taylorw.data@gmail.com">taylorw.data@gmail.com</a></p>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
+    <script>document.getElementById('copyright-year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
