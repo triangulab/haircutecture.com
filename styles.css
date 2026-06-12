@@ -330,6 +330,9 @@ section{ padding:80px 0; }
   .announcement-content{ flex-direction:column; text-align:center; }
 }
 
+/* Address line break: hidden on desktop, active on phones (rule order matters) */
+.mobile-break{ display:none; }
+
 @media (max-width:480px){
   .container{ padding-inline:15px; }
   .hero-title{ font-size:2em; }
@@ -338,9 +341,6 @@ section{ padding:80px 0; }
   .footer-contact i{ margin-top:5px; }
   .mobile-break{ display:inline; }
 }
-
-/* Address line break: hidden on desktop, active on phones */
-.mobile-break{ display:none; }
 
 /* =========================
    Animations / A11y
