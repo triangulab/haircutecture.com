@@ -255,9 +255,9 @@ section{ padding:80px 0; }
   .location-visual{ flex-direction:column; gap:24px; }
   .location-visual > *{ max-width:100%; }
   .map-container, .building-image{ max-width:100%; min-width:0; margin-inline:0; }
-  /* the storefront photo is portrait — give it a matching box so the whole building shows
-     and the caption only covers a small band at the bottom */
-  .building-image{ aspect-ratio:3/4; max-width:340px; margin-inline:auto; }
+  /* the photo includes sky + tree at the top; on mobile use a shorter 4:3 box so the
+     centered cover-crop trims the sky and tree and frames just the storefront (like desktop) */
+  .building-image{ aspect-ratio:4/3; max-width:480px; margin-inline:auto; }
 }
 
 /* =========================
