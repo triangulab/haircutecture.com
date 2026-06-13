@@ -85,7 +85,10 @@ body{
 .hero{
   height:45vh; min-height:320px;
   padding:40px 0 30px;
-  background:linear-gradient(120deg,#3486e4 0%,#1229aa 100%);
+  background:
+    linear-gradient(120deg, rgba(13,32,110,.82) 0%, rgba(24,52,140,.74) 100%),
+    url('hero-bg.jpg') center/cover no-repeat,
+    linear-gradient(120deg,#3486e4 0%,#1229aa 100%);
   display:flex; align-items:center; justify-content:center;
   position:relative; text-align:center;
   box-shadow:0 4px 32px rgba(255,126,107,.08);
@@ -106,8 +109,10 @@ body{
   text-align:left; font-size:1.15em; color:#fff; margin:0; text-shadow:1px 1px 6px rgba(0,0,0,.1);
 }
 
-/* Image column (works with background *or* <img.hero-photo>) */
+/* Image column — disabled: hero now uses a full-bleed background photo (hero-bg.jpg).
+   To bring the side photo back, remove the display:none below. */
 .hero-image{
+  display:none;
   position:absolute; right:0; width:40%; height:100%;
   background:url('jessica.png') 50% 20%/cover no-repeat;
   opacity:.3;
